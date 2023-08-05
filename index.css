@@ -1,0 +1,147 @@
+body, div, input, select, button {
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+main {
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* gap: 20px; */
+    padding: 20px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #6E24B2;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.link-to-github {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #6E24B2;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+select, input[type="text"], input[type="number"], textarea {
+    padding: 0.75rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+select:focus, input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #6E24B2;
+}
+
+#output-svg {
+    min-height: 200px;
+    resize: none;
+    font-size: 0.755rem;
+    padding: 0px;
+}
+
+textarea:focus {
+    border-color: #6E24B2;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 8px;
+    background-color: #6E24B2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.633rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4b1a7f;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .link-to-github {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
+
+/* Mobile styles for textarea */
+@media screen and (max-width: 420px) {
+    textarea {
+        min-height: 150px;
+    }
+}

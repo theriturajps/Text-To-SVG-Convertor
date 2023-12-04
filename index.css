@@ -1,118 +1,67 @@
-body, div, input, select, button {
+body {
     font-family: 'Arial', sans-serif;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: #f8f9fa;
-    color: #343a40;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
     text-align: center;
-    color: #6E24B2;
 }
 
-label {
-    font-size: 1.2rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 1rem;
-    text-transform: capitalize;
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-select, input[type="text"], input[type="number"], textarea {
-    padding: 1rem;
-    border: 2px solid #ced4da;
-    border-radius: 5px;
-    outline: none;
-    font-size: 1.2rem;
+.input-holder {
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.input-text {
     width: 100%;
 }
 
-select:focus, input[type="text"]:focus, input[type="number"]:focus {
-    border-color: #6E24B2;
+.input-size {
+    width: 80px;
 }
 
-#output-svg {
-    min-height: 250px;
+.textarea-container {
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
     resize: none;
-    font-size: 1rem;
-    padding: 10px;
-}
-
-textarea:focus {
-    border-color: #6E24B2;
 }
 
 .buttons-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 1.5rem;
+    margin-top: 10px;
 }
 
 .btn {
-    padding: 10px;
-    background-color: #6E24B2;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
     color: #fff;
-    border: none;
+    background-color: #007BFF;
+    border: 1px solid #007BFF;
     border-radius: 5px;
-    font-size: 1rem;
-    text-transform: capitalize;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #4b1a7f;
+#svg-render {
+    margin-top: 20px;
 }
 
-.sidebar {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content {
-        margin-top: 20px;
-    }
-}
-
-/* Mobile styles for textarea */
-@media screen and (max-width: 420px) {
-    textarea {
-        min-height: 180px;
-    }
-}
+/* Add any additional styles as needed */
